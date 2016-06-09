@@ -6,14 +6,22 @@
         <title>New Web Project</title>
     </head>
     <body>
-    	<div class="file_menu">
-    		<div class="file_menu_item_container">
-    			<h1 class="file_menu_item">File</h1>
+    	<div class="menu">
+    		<div class="menu_item_container" onmouseover="menuMouseOver(this)" onmouseout="menuMouseOut(this)">
+    			<h1 class="menu_item">File</h1>
     		</div>
-    		<div class="file_menu_item_container">
-    			<h1 class="file_menu_item">Edit</h1>
+    		<div class="menu_item_container" onmouseover="menuMouseOver(this)" onmouseout="menuMouseOut(this)">
+    			<h1 class="menu_item">Edit</h1>
     		</div>
     	</div>
-        <h1 class="main">New Web Project Page</h1>
+      <h1 class="main">New Web Project Page</h1>
+      <script>
+        menuMouseOver = function(element) {
+          element.style.border = 'thin solid white';
+        };
+        menuMouseOut = function(element) {
+          element.style.border = 'thin solid transparent';
+        };
+      </script>
     </body>
 </html>
